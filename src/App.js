@@ -3,19 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 
 //Components
-import Users_mostrar from './components/users/Mostrar';
+//import Users_mostrar from './components/users/Mostrar';
+//import Navigation_bar from './components/nav-bar/NavigationBar';
+import Logo from './components/logo/Logo';
+import Login from './components/login/Login';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <Logo></Logo>
         </div>
-        <Users_mostrar></Users_mostrar>
-        <p className="App-intro">
-        </p>
+        <Login></Login>
       </div>
     );
   }

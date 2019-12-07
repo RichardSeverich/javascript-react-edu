@@ -12,7 +12,7 @@ class Mostrar extends Component{
         const rows = this.state.users.map((user, i) => {
             return (
             <tr key={user._id}>
-                <td> <input type="checkbox"></input></td>
+                <td><input type="checkbox"></input></td>
                 <td>{user._id}</td>
                 <td>{user.nick_name}</td>
                 <td>{user.password}</td>

@@ -2,16 +2,11 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: rgb(040, 040, 040);
-  height: 140px;
-  padding: 20px;
+  background-color: rgb(033, 033, 033);
+  height: 80px;
   color: white;
+  margin-bottom: 32px;
 }
 
 .App-intro {
@@ -22,3 +17,6 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+
