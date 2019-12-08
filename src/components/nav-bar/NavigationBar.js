@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 import Logo from './../logo/Logo';
 import './NavigationBar.css';
 import logo from './logo.svg';
+import { withRouter } from 'react-router-dom';
 
 class NavigationBar extends Component {
   constructor(props) {
     super(props);
     this.navigateUsuariosMostrar = this.navigateUsuariosMostrar.bind(this);
+    this.navigateLogin = this.navigateLogin.bind(this);
   }
+  
   navigateUsuariosMostrar() {
     this.props.history.push('/users-mostrar');
   }
+
+  navigateLogin(){
+    this.props.history.push('/login');
+  }
     render() {
         return (
-<div>     
+<div>
 <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
  <a className="navbar-brand" href="#">
  <img src={logo} className="App-logo-bar" alt="logo" />
@@ -66,7 +73,7 @@ class NavigationBar extends Component {
         </a>
         <div className="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
             <a className="dropdown-item" href="#">Opciones</a>
-            <a className="dropdown-item" href="#">Salir</a>
+            <a onClick={this.navigateLogin} className="dropdown-item" href="#">Salir</a>
         </div>
     </li>
   </ul>
@@ -76,4 +83,4 @@ class NavigationBar extends Component {
         )
     }
 }
-export default NavigationBar;
+export default withRouter(NavigationBar);
