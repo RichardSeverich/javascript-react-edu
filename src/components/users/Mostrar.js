@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { users } from './../../mock-data/users.json';
+import NavigationBar from './../nav-bar/NavigationBar';
 
 class Mostrar extends Component{
     constructor(){
@@ -27,6 +28,8 @@ class Mostrar extends Component{
             )
         })
         return (
+            <div>
+            <NavigationBar></NavigationBar>
             <table className="table table-hover">
             <thead>
               <tr>
@@ -45,6 +48,7 @@ class Mostrar extends Component{
                 {rows}
             </tbody>
           </table>
+          </div>
         )
     }
 }

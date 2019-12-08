@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './../logo/Logo';
 import './Login.css';
-import { withRouter } from 'react-router-dom';
 
 class Login extends Component{
     constructor(props) {
@@ -47,4 +46,4 @@ class Login extends Component{
         )
     }
 }
-export default withRouter(Login);
+export default Login;
