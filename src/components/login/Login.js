@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
+import Logo from './../logo/Logo';
+import './Login.css';
+import { withRouter } from 'react-router-dom';
 
 class Login extends Component{
+    constructor(props) {
+        super(props);
+        this.navigateNavbar = this.navigateNavbar.bind(this);
+    }
     navigateNavbar() {
-       
+        this.props.history.push('/nav-bar');
     }
     render() {
         return (
+            <div>
+            <div className="Login-header">
+                <Logo></Logo>
+            </div>
             <div className="container col-md-3">
                 <div className="card">
                     <div className="card-header">
-                        <h3 align="center">
+                        <h3>
                             Iniciar sesion
                         </h3>
                     </div>
@@ -32,7 +43,8 @@ class Login extends Component{
                     </div>
                 </div>
             </div>
+            </div>
         )
     }
 }
-export default Login;
+export default withRouter(Login);

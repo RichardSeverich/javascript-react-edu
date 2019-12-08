@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PropTypes from 'prop-types';
 
 //Components
-//import Users_mostrar from './components/users/Mostrar';
-//import Navigation_bar from './components/nav-bar/NavigationBar';
-import Logo from './components/logo/Logo';
-import Login from './components/login/Login';
+import Content from './components/content/Content';
 
 class App extends Component {
+  static propTypes = {
+    children: PropTypes.object.isRequired
+  };
   render() {
+    const { children } = this.props;    
     return (
       <div className="App">
-        <div className="App-header">
-        <Logo></Logo>
-        </div>
-        <Login></Login>
+          <Content body={children}></Content>
       </div>
     );
   }
