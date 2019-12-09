@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { users } from './../../mock-data/users.json';
+import NavigationBar from './../nav-bar/NavigationBar';
+import './Crear.css';
 
 class Crear extends Component{
     constructor(){
@@ -10,57 +12,62 @@ class Crear extends Component{
     }
     render() {
         return (
+        <div>
+            <NavigationBar></NavigationBar>
             <div className="container col-md-3">
             <div className="card">
                 <div className="card-header">
                   <h3 align="center">
-                    Usuarios
+                    Users
                   </h3>
                 </div>
                 <div className="card-body">
                   <form action="">
                     <div className="form-group">
-                      <label for="">Id</label>
-                      <input type="text" class="form-control" maxlength="7"></input>
+                      <label>Id</label>
+                      <input type="text" className="form-control" maxLength="7"></input>
                     </div>
                     <div className="form-group">
-                        <label for="">Contraseña</label>
-                        <input type="password" class="form-control" minlength="3" maxlength="10"></input>
+                        <label>nickname</label>
+                        <input suggested="my_nickname" className="form-control" minLength="3" maxLength="10"></input>
                     </div>
                     <div className="form-group">
-                        <label for="">Nombres</label>
-                        <input type="text" class="form-control" minlength="3" maxlength="10"></input>
+                        <label>Password</label>
+                        <input suggested="mypass123" type="password" className="form-control" minLength="3" maxLength="10"></input>
                     </div>
                     <div className="form-group">
-                        <label for="">Apellidos</label>
-                        <input type="text" class="form-control" minlength="3" maxlength="10"></input>
+                        <label>Names</label>
+                        <input type="text" className="form-control" minLength="3" maxLength="24"></input>
                     </div>
                     <div className="form-group">
-                        <label for="">Fecha nacimiento</label>
-                        <input type="date" class="form-control"></input>
+                        <label>Last Names</label>
+                        <input type="text" className="form-control" minLength="3" maxLength="24"></input>
                     </div>
                     <div className="form-group">
-                        <label for="">Correo</label>
-                        <input type="text" class="form-control" maxlength="30"></input>
+                        <label>Email</label>
+                        <input type="text" className="form-control" maxLength="32"></input>
                     </div>
                     <div className="form-group">
-                        <label for="">Tipo</label>
+                        <label>Tipo</label>
                         <select className="custom-select custom-select-sm">
-                            <option value = "admin">Administrador</option>
-                            <option value = "seller">Vendedor</option>
-                            <option value = "client">Cliente</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Student">Student</option>
+                            <option value="Proffesor">Proffesor</option>
+                            <option value="Trainer">Trainer</option>
+                            <option value="Engineer">Engineer</option>
                         </select>
                     </div>
                     <div className="text-center">
                       <button 
                         className="btn btn-success">Registrar
                       </button>
-                      <button className="btn btn-info" style="margin-left: 24px">Cancelar</button>
+                      <button className="btn btn-info Boton-cancelar">Cancelar</button>
                     </div>
                   </form>
                 </div>
             </div>
           </div>
+        </div>
         )
     }
 }

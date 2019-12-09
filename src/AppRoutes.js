@@ -7,10 +7,12 @@ import App from './App';
 import Login from './components/login/Login';
 import NavigationBar from './components/nav-bar/NavigationBar';
 import UsersMostrar from './components/users/Mostrar';
+import UsersCrear from './components/users/Crear';
 
 const AppRoutes = () =>
   <App>
     <Switch>
+      <Route exact path="/users-crear" component={UsersCrear} />
       <Route exact path="/users-mostrar" component={UsersMostrar} />
       <Route exact path="/nav-bar" component={NavigationBar} />
       <Route exact path="/login" component={Login} />

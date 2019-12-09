@@ -8,11 +8,16 @@ class NavigationBar extends Component {
   constructor(props) {
     super(props);
     this.navigateUsuariosMostrar = this.navigateUsuariosMostrar.bind(this);
+    this.navigateUsuariosCrear = this.navigateUsuariosCrear.bind(this);
     this.navigateLogin = this.navigateLogin.bind(this);
   }
   
   navigateUsuariosMostrar() {
     this.props.history.push('/users-mostrar');
+  }
+
+  navigateUsuariosCrear() {
+    this.props.history.push('/users-crear');
   }
 
   navigateLogin(){
@@ -22,7 +27,7 @@ class NavigationBar extends Component {
         return (
 <div>
 <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
- <a className="navbar-brand" href="#">
+ <a className="navbar-brand" href="/nav-bar">
  <img src={logo} className="App-logo-bar" alt="logo" />
  </a>
   <ul className="navbar-nav">
@@ -32,7 +37,7 @@ class NavigationBar extends Component {
         </button>
         <div className="dropdown-menu dropdown-menu-right">
           <button onClick={this.navigateUsuariosMostrar} className="dropdown-item" type="button">Mostrar</button>
-          <button className="dropdown-item" type="button">Crear</button>
+          <button onClick={this.navigateUsuariosCrear} className="dropdown-item" type="button">Crear</button>
         </div>
     </div>
 
