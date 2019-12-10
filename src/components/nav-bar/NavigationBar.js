@@ -9,6 +9,10 @@ class NavigationBar extends Component {
     super(props);
     this.navigateUsuariosMostrar = this.navigateUsuariosMostrar.bind(this);
     this.navigateUsuariosCrear = this.navigateUsuariosCrear.bind(this);
+    this.navigateCursosMostrar = this.navigateCursosMostrar.bind(this);
+    this.navigateCursosCrear = this.navigateCursosCrear.bind(this);
+    this.navigateModulosMostrar = this.navigateModulosMostrar.bind(this);
+    this.navigateModulosCrear = this.navigateModulosCrear.bind(this);
     this.navigateLogin = this.navigateLogin.bind(this);
   }
   
@@ -18,6 +22,22 @@ class NavigationBar extends Component {
 
   navigateUsuariosCrear() {
     this.props.history.push('/users-crear');
+  }
+
+  navigateCursosMostrar() {
+    this.props.history.push('/courses-mostrar');
+  }
+
+  navigateCursosCrear() {
+    this.props.history.push('/courses-crear');
+  }
+
+  navigateModulosMostrar() {
+    this.props.history.push('/modules-mostrar');
+  }
+
+  navigateModulosCrear() {
+    this.props.history.push('/modules-crear');
   }
 
   navigateLogin(){
@@ -46,8 +66,8 @@ class NavigationBar extends Component {
           Adm. Cursos
         </button>
         <div className="dropdown-menu dropdown-menu-right">
-          <button className="dropdown-item" type="button">Mostrar</button>
-          <button className="dropdown-item" type="button">Crear</button>
+          <button onClick={this.navigateCursosMostrar} className="dropdown-item" type="button">Mostrar</button>
+          <button onClick={this.navigateCursosCrear} className="dropdown-item" type="button">Crear</button>
         </div>
     </div>
     <div className="btn-group">
@@ -55,8 +75,8 @@ class NavigationBar extends Component {
           Adm. Modulos
         </button>
         <div className="dropdown-menu dropdown-menu-right">
-          <button className="dropdown-item" type="button">Mostrar</button>
-          <button className="dropdown-item" type="button">Crear</button>
+          <button onClick={this.navigateModulosMostrar} className="dropdown-item" type="button">Mostrar</button>
+          <button onClick={this.navigateModulosCrear} className="dropdown-item" type="button">Crear</button>
         </div>
     </div>
 

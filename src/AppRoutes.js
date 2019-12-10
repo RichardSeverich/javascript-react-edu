@@ -8,16 +8,24 @@ import Login from './components/login/Login';
 import NavigationBar from './components/nav-bar/NavigationBar';
 import UsersMostrar from './components/users/Mostrar';
 import UsersCrear from './components/users/Crear';
+import CoursesMostrar from './components/courses/Mostrar';
+import CoursesCrear from './components/courses/Crear';
+import ModulesMostrar from './components/modules/Mostrar';
+import ModulesCrear from './components/modules/Crear';
 
 const AppRoutes = () =>
   <App>
     <Switch>
-      <Route exact path="/users-crear" component={UsersCrear} />
-      <Route exact path="/users-mostrar" component={UsersMostrar} />
-      <Route exact path="/nav-bar" component={NavigationBar} />
-      <Route exact path="/login" component={Login} />
-      <Route exact path="/" component={Login} />
-      <Route component={Login} />
+      <Route exact path="/modules-crear" component={ModulesCrear}/>
+      <Route exact path="/modules-mostrar" component={ModulesMostrar}/>
+      <Route exact path="/courses-crear" component={CoursesCrear}/>
+      <Route exact path="/courses-mostrar" component={CoursesMostrar}/>
+      <Route exact path="/users-crear" component={UsersCrear}/>
+      <Route exact path="/users-mostrar" component={UsersMostrar}/>
+      <Route exact path="/nav-bar" component={NavigationBar}/>
+      <Route exact path="/login" component={Login}/>
+      <Route exact path="/" component={Login}/>
+      <Route component={Login}/>
     </Switch>
   </App>;
 

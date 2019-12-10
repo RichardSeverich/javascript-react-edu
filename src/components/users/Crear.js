@@ -18,7 +18,7 @@ class Crear extends Component{
             <div className="card">
                 <div className="card-header">
                   <h3 align="center">
-                    Users
+                    Usuarios
                   </h3>
                 </div>
                 <div className="card-body">
@@ -52,7 +52,7 @@ class Crear extends Component{
                         <select className="custom-select custom-select-sm">
                             <option value="Admin">Admin</option>
                             <option value="Student">Student</option>
-                            <option value="Proffesor">Proffesor</option>
+                            <option value="Proffesor">Professor</option>
                             <option value="Trainer">Trainer</option>
                             <option value="Engineer">Engineer</option>
                         </select>
