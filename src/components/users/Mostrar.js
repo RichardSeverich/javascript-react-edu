@@ -31,8 +31,7 @@ class Mostrar extends Component{
         return (
 <div>
     <NavigationBar></NavigationBar>
-
-    <div className="container">
+    <div className="container" >
         <div className="card card-users">
             <div className="card-header">
                 <h3 align="center">
@@ -62,12 +61,7 @@ class Mostrar extends Component{
                 </table>
             </div>
         </div>
-    </div>
-
-
-
-        
-
+    </div>    
 </div>
         )
     }
