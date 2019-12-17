@@ -12,10 +12,14 @@ import CoursesMostrar from './components/courses/Mostrar';
 import CoursesCrear from './components/courses/Crear';
 import ModulesMostrar from './components/modules/Mostrar';
 import ModulesCrear from './components/modules/Crear';
+import ScoresMostrar from './components/scores/Mostrar';
+import ScoresCrear from './components/scores/Crear';
 
 const AppRoutes = () =>
   <App>
     <Switch>
+      <Route exact path="/scores-crear" component={ScoresCrear}/>
+      <Route exact path="/scores-mostrar" component={ScoresMostrar}/>
       <Route exact path="/modules-crear" component={ModulesCrear}/>
       <Route exact path="/modules-mostrar" component={ModulesMostrar}/>
       <Route exact path="/courses-crear" component={CoursesCrear}/>

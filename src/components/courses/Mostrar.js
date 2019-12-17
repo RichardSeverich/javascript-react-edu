@@ -26,8 +26,8 @@ class Mostrar extends Component{
         return (
 <div>
     <NavigationBar></NavigationBar>
-    <div className="container">
-        <div className="card card-users">
+    <div align="center">
+        <div className="card card-courses">
             <div className="card-header">
                 <h3 align="center">
                     Cursos

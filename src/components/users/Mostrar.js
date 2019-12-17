@@ -9,9 +9,28 @@ class Mostrar extends Component{
         this.state = {
             users
         }
+       this.eliminar = this.eliminar.bind(this);
     }
+
+    eliminar(_id) {
+        /*for (var i = 0; i < this.state.users.length; i+=1) {
+            if(this.state.users[i]._id == _id){
+                let index = this.state.users.indexOf(_id);
+                this.state.users = this.state.users.splice(index, 1);
+            }
+        }*/
+        this.setState({
+            users: this.state.users.filter((element, index) => {
+                return element._id != _id;
+            })
+
+        })
+        alert("deleted successfully");
+      }
+
     render() {
         const rows = this.state.users.map((user, i) => {
+            let _id = user._id;
             return (
             <tr key={user._id}>
                 <td scope="col"><input type="checkbox"></input></td>
@@ -24,14 +43,14 @@ class Mostrar extends Component{
                 <td scope="col">{user.email}</td>
                 <td scope="col">{user.type}</td>
                 <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
-                <td scope="col"> <button className="btn btn-danger">Eliminar</button> </td>
+                <td scope="col"> <button onClick={this.eliminar.bind(this, _id)} className="btn btn-danger">Eliminar</button> </td>
             </tr>
             )
         })
         return (
 <div>
     <NavigationBar></NavigationBar>
-    <div className="container" >
+    <div align="center">
         <div className="card card-users">
             <div className="card-header">
                 <h3 align="center">

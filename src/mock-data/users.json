@@ -42,16 +42,6 @@
         },
         {
             "_id": "6090105",
-            "nick_name": "AryaStark",
-            "password": "Arya123",
-            "name": "Arya",
-            "last_name": "Stark",
-            "career": "System engineer",
-            "email": "Arya.Stark@gmail.com",
-            "type": "Student"
-        },
-        {
-            "_id": "6090106",
             "nick_name": "SansaStark",
             "password": "Sansa123",
             "name": "Sansa",
@@ -61,7 +51,7 @@
             "type": "Student"
         },
         {
-            "_id": "6090107",
+            "_id": "6090106",
             "nick_name": "KhalDrogo",
             "password": "Khal123",
             "name": "Khal",
@@ -71,7 +61,7 @@
             "type": "Student"
         },
         {
-            "_id": "6090108",
+            "_id": "6090107",
             "nick_name": "RobertB",
             "password": "Robert123",
             "name": "Robert",
@@ -81,7 +71,7 @@
             "type": "Student"
         },
         {
-            "_id": "6090109",
+            "_id": "6090108",
             "nick_name": "NightKing",
             "password": "Nightt123",
             "name": "Night",
@@ -91,7 +81,7 @@
             "type": "Student"
         },
         {
-            "_id": "6090110",
+            "_id": "6090119",
             "nick_name": "Drogon",
             "password": "Drogon123",
             "name": "Targaryen",
