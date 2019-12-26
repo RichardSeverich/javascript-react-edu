@@ -4,6 +4,7 @@
             "_id": "5de09bfdc3c68622c07f7881",
 			"id_user": "6090101",
 			"user_name": "Jhon",
+			"user_last_name": "Snow",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "90"
@@ -12,6 +13,7 @@
             "_id": "5de09bfdc3c68622c07f7882",
 			"id_user": "6090105",
             "user_name": "Arya",
+			"user_last_name": "Stark",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "85"
@@ -20,6 +22,7 @@
             "_id": "5de09bfdc3c68622c07f7883",
 			"id_user": "6090106",
             "user_name": "Sansa",
+			"user_last_name": "Stark",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "90"
@@ -28,6 +31,7 @@
             "_id": "5de09bfdc3c68622c07f7884",
 			"id_user": "6090107",
             "user_name": "Khal",
+			"user_last_name": "Drogo",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "85"
@@ -36,6 +40,7 @@
             "_id": "5de09bfdc3c68622c07f7885",
 			"id_user": "6090108",
             "user_name": "Robert",
+			"user_last_name": "Baratheon",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "65"
@@ -44,14 +49,16 @@
             "_id": "5de09bfdc3c68622c07f7886",
 			"id_user": "6090109",
             "user_name": "Night",
+			"user_last_name": "King",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "75"
         },
         {
             "_id": "5de09bfdc3c68622c07f7887",
-			"id_user": "6090110",
-            "user_name": "Targaryen",
+			"id_user": "6090103",
+            "user_name": "Daenerys",
+			"user_last_name": "Targaryen",
 			"id_module": "5de09bfdc3c68622c07f771",
 			"module_name": "Software Development Fundamentals",
 			"value": "60"
@@ -60,6 +67,7 @@
             "_id": "5de09bfdc3c68622c07f7881",
 			"id_user": "6090101",
             "user_name": "Jhon",
+			"user_last_name": "Snow",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "85"
@@ -68,6 +76,7 @@
             "_id": "5de09bfdc3c68622c07f7882",
 			"id_user": "6090105",
             "user_name": "Arya",
+			"user_last_name": "Stark",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "60"
@@ -76,6 +85,7 @@
             "_id": "5de09bfdc3c68622c07f7883",
 			"id_user": "6090106",
             "user_name": "Sansa",
+			"user_last_name": "Stark",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "75"
@@ -84,6 +94,7 @@
             "_id": "5de09bfdc3c68622c07f7884",
 			"id_user": "6090107",
             "user_name": "Khal",
+			"user_last_name": "Drogo",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "80"
@@ -92,6 +103,7 @@
             "_id": "5de09bfdc3c68622c07f7885",
 			"id_user": "6090108",
             "user_name": "Robert",
+			"user_last_name": "Baratheon",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "85"
@@ -100,6 +112,7 @@
             "_id": "5de09bfdc3c68622c07f7886",
 			"id_user": "6090109",
             "user_name": "Night",
+			"user_last_name": "King",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "80"
@@ -107,7 +120,8 @@
         {
             "_id": "5de09bfdc3c68622c07f7887",
 			"id_user": "6090110",
-            "user_name": "Targaryen",
+            "user_name": "Daenerys",
+			"user_last_name": "Targaryen",
 			"id_module": "5de09bfdc3c68622c07f772",
 			"module_name": "Data Structure",
 			"value": "65"

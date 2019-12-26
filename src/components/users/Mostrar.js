@@ -13,12 +13,6 @@ class Mostrar extends Component{
     }
 
     eliminar(_id) {
-        /*for (var i = 0; i < this.state.users.length; i+=1) {
-            if(this.state.users[i]._id == _id){
-                let index = this.state.users.indexOf(_id);
-                this.state.users = this.state.users.splice(index, 1);
-            }
-        }*/
         this.setState({
             users: this.state.users.filter((element, index) => {
                 return element._id != _id;
