@@ -1,14 +1,34 @@
+// React
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+// Others
 import Logo from './../logo/Logo';
 import './Login.css';
+import { Consumer } from './../../Context'
 
 class Login extends Component{
     constructor(props) {
         super(props);
         this.navigateNavbar = this.navigateNavbar.bind(this);
     }
-    navigateNavbar() {
-        this.props.history.push('/nav-bar');
+    navigateNavbar(users) {
+        // Find the text field via the React ref
+        let nickname = ReactDOM.findDOMNode(this.refs.nickname).value.trim();
+        let password = ReactDOM.findDOMNode(this.refs.password).value.trim();
+        let band = false;
+        users.forEach( function(user, indice, array) {
+            let bandOne = user._id  == nickname && user.password == password;
+            let bandTwo = user.nick_name  == nickname && user.password == password;
+            if(bandOne || bandTwo){
+                band = true;
+                //break;
+            }
+        });
+        if(band){
+            this.props.history.push('/nav-bar');    
+        } else {
+            alert("user or password incorrect");
+        }
     }
     render() {
         return (
@@ -27,16 +47,38 @@ class Login extends Component{
                         <form action="">
                             <div className="form-group">
                                 <label >Username</label>
-                                    <input type="text" className="form-control username" minLength="7"  maxLength="7">
+                                    <input 
+                                        ref="nickname"
+                                        type="text" 
+                                        className="form-control username" 
+                                        minLength="3"  
+                                        maxLength="10">
                                     </input>
                                 </div>
                                 <div className="form-group">
                                     <label>Password</label>
-                                    <input type="password" className="form-control" minLength="3" maxLength="10">
+                                    <input
+                                       ref="password" 
+                                        type="password" 
+                                        className="form-control" 
+                                        minLength="3" 
+                                        maxLength="10">
                                     </input>
                                 </div>
                                 <div className="text-center">
-                                    <button onClick={this.navigateNavbar} className="btn btn-info" style={{marginLeft: "24px"}}>Ingresar</button>
+                                <Consumer>  
+                                {
+                                    props => { return (
+                                        <button
+                                        onClick={this.navigateNavbar.bind(this, props.users)}
+                                        type="button"
+                                        style={{marginLeft: "24px"}}
+                                        className="btn btn-info">
+                                        Ingresar
+                                        </button>
+                                    ) }
+                                } 
+                                </Consumer>                                    
                                 </div>
                         </form>
                     </div>

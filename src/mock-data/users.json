@@ -89,6 +89,16 @@
             "career": "System engineer",
             "email": "Drogon.Targaryen@gmail.com",
             "type": "Student"
+        },
+        {
+            "_id": "5847585",
+            "nick_name": "rseveric",
+            "password": "secret123",
+            "name": "Richard",
+            "last_name": "Severich",
+            "career": "System engineer",
+            "email": "Richard.Severich@gmail.com",
+            "type": "Admin"
         }
     ]
 }

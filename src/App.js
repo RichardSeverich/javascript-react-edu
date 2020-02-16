@@ -17,11 +17,11 @@ class App extends Component {
         
         this.state = {
             users: users,
-            courses: courses,
-            updateUser: this.updateUser
+            courses: courses
+            //updateUser: this.updateUser
         };
     };
-    updateUser(updatedUsers){ this.setState({users: updatedUsers});}
+    //updateUser(updatedUsers){ this.setState({users: updatedUsers});}
     
     static propTypes = {
         children: PropTypes.object.isRequired
