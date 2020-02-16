@@ -4,19 +4,38 @@ import PropTypes from 'prop-types';
 
 //Components
 import Content from './components/content/Content';
+// Data
+import { users } from './mock-data/users.json';
+import { courses } from './mock-data/courses.json';
+
+// Context
+import { Provider } from './Context'
 
 class App extends Component {
-  static propTypes = {
-    children: PropTypes.object.isRequired
-  };
-  render() {
-    const { children } = this.props;    
-    return (
-      <div className="App">
-          <Content body={children}></Content>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+            users: users,
+            courses: courses,
+            updateUser: this.updateUser
+        };
+    };
+    updateUser(updatedUsers){ this.setState({users: updatedUsers});}
+    
+    static propTypes = {
+        children: PropTypes.object.isRequired
+    };
+    render() {
+        const { children } = this.props;    
+        return (
+            <Provider value={this.state}>
+                <div className="App">
+                    <Content body={children}></Content>
+                </div>
+            </Provider>
+        );
+    }
 }
 
 export default App;
