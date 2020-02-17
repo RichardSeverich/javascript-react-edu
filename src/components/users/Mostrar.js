@@ -14,13 +14,11 @@ class Mostrar extends Component{
        this.eliminar = this.eliminar.bind(this);
     }
 
-    eliminar(_id) {
-        this.setState({
-            users: this.state.users.filter((element, index) => {
-                return element._id != _id;
-            })
-
+    eliminar(props, _id) {
+        let users = props.users.filter((element, index) => {
+            return element._id !== _id;
         })
+        props.updateUsers(users)
         alert("deleted successfully");
     }
 
@@ -70,24 +68,24 @@ class Mostrar extends Component{
                                             <td scope="col">{user.type}</td>
                                             <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
                                             <td scope="col"> 
-                                                <button 
-                                                    onClick={this.eliminar.bind(this, _id)} 
+                                                <button
+                                                    onClick={this.eliminar.bind(this, props, user._id)}
                                                     className="btn btn-danger">
                                                     Eliminar
-                                                </button> 
+                                                </button>
                                             </td>
                                         </tr>
                                     )
                                 })
                             }
-                        } 
-                        </Consumer> 
+                        }
+                        </Consumer>
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>    
-        </div> ) 
+        </div> 
+        </div> )
     }
 }
 export default Mostrar;

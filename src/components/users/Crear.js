@@ -32,7 +32,6 @@ class Crear extends Component{
             career: career,
             email: email,
             type: type
-        
         };
         users.push(user);
         alert("created successfully");
@@ -46,8 +45,7 @@ class Crear extends Component{
     }
 
     render() {
-        return (
-        <div>
+        return ( <div>
             <NavigationBar></NavigationBar>
             <div className="container col-md-3">
             <div className="card">
@@ -136,7 +134,7 @@ class Crear extends Component{
                         </select>
                     </div>
                     <div className="text-center">
-                    <Consumer>  
+                    <Consumer> 
                         {
                             props => { return (
                                     <button
@@ -147,15 +145,14 @@ class Crear extends Component{
                                   </button>
                             ) }
                         } 
-                    </Consumer>    
+                    </Consumer>
                       <button className="btn btn-info Boton-cancelar">Cancelar</button>
                     </div>
                   </form>
                 </div>
             </div>
           </div>
-        </div>
-        )
+        </div> )
     }
 }
 export default Crear;

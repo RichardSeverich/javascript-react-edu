@@ -14,15 +14,12 @@ import { Provider } from './Context'
 class App extends Component {
     constructor(props) {
         super(props);
-        
         this.state = {
             users: users,
-            courses: courses
-            //updateUser: this.updateUser
+            courses: courses,
+            updateUsers: (updatedUsers) => {this.setState({users: updatedUsers})}
         };
     };
-    //updateUser(updatedUsers){ this.setState({users: updatedUsers});}
-    
     static propTypes = {
         children: PropTypes.object.isRequired
     };
