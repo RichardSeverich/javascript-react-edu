@@ -17,7 +17,8 @@ class App extends Component {
         this.state = {
             users: users,
             courses: courses,
-            updateUsers: (updatedUsers) => {this.setState({users: updatedUsers})}
+            updateUsers: (updatedUsers) => {this.setState({users: updatedUsers})},
+            updateCourses: (updateCourses) => {this.setState({courses: updateCourses})}
         };
     };
     static propTypes = {

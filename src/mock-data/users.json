@@ -88,6 +88,56 @@
             "last_name": "Drogo",
             "career": "System engineer",
             "email": "Drogon.Targaryen@gmail.com",
+            "type": "Professor"
+        },
+		{
+            "_id": "5925100",
+            "nick_name": "scooper",
+            "password": "bingbang123",
+            "name": "Sheldon",
+            "last_name": "Cooper",
+            "career": "Physical",
+            "email": "Sheldon.Cooper@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "5925101",
+            "nick_name": "lhofs",
+            "password": "bingbang123",
+            "name": "Leonard",
+            "last_name": "Hofstadter",
+            "career": "Physical",
+            "email": "Leonard.Hofstadter@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "5925102",
+            "nick_name": "penny",
+            "password": "bingbang123",
+            "name": "Penny",
+            "last_name": "Hofstadter",
+            "career": "Economy",
+            "email": "Penny.Hofstadter@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "5925103",
+            "nick_name": "raj",
+            "password": "bingbang123",
+            "name": "Rajesh",
+            "last_name": "Koothrappali",
+            "career": "Physical",
+            "email": "Rajesh.Koothrappali@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "5925104",
+            "nick_name": "howard",
+            "password": "bingbang123",
+            "name": "Howard",
+            "last_name": "Wolowitz",
+            "career": "Electronic engineer",
+            "email": "Howard.Wolowitz@gmail.com",
             "type": "Student"
         },
         {

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { users } from './../../mock-data/users.json';
 import NavigationBar from './../nav-bar/NavigationBar';
 import './Mostrar.css';
-
 import { Consumer } from './../../Context'
 
 class Mostrar extends Component{

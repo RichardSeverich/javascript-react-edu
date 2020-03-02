@@ -1,0 +1,74 @@
+{
+    "courses_users": [
+        {
+            "_id": "1001",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090101"
+        },
+        {
+            "_id": "1002",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090102"
+        },
+        {
+            "_id": "1003",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090103"
+        },
+        {
+            "_id": "1004",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090104"
+        },
+        {
+            "_id": "1005",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090105"
+        },
+        {
+            "_id": "1006",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090106"
+        },
+        {
+            "_id": "1007",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090107"
+        },
+        {
+            "_id": "1008",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090108"
+        },
+        {
+            "_id": "1009",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"user_id": "6090119"
+        },
+		{
+            "_id": "1010",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"user_id": "5925100"
+        },
+		        {
+            "_id": "1011",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"user_id": "5925101"
+        },
+				{
+            "_id": "1012",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"user_id": "5925102"
+        },
+		{
+            "_id": "1013",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"user_id": "5925103"
+        },
+		{
+            "_id": "1014",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"user_id": "5925104"
+        },
+    ]
+}
