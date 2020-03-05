@@ -80,6 +80,17 @@ class NavigationBar extends Component {
           <button onClick={this.navigateCursosCrear} className="dropdown-item" type="button">Crear</button>
         </div>
     </div>
+
+    <div className="btn-group">
+        <button type="button" className="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Adm. Inscripciones
+        </button>
+        <div className="dropdown-menu dropdown-menu-right">
+          <button onClick={this.navigateCursosMostrar} className="dropdown-item" type="button">Mostrar</button>
+          <button onClick={this.navigateCursosCrear} className="dropdown-item" type="button">Crear</button>
+        </div>
+    </div>
+
     <div className="btn-group">
         <button type="button" className="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Adm. Modulos

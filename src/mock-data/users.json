@@ -140,6 +140,66 @@
             "email": "Howard.Wolowitz@gmail.com",
             "type": "Student"
         },
+		{
+            "_id": "7788501",
+            "nick_name": "naruto",
+            "password": "7colas",
+            "name": "Naruto",
+            "last_name": "Uzumaki",
+            "career": "Finance engineer",
+            "email": "Naruto.Uzumaki@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "7788502",
+            "nick_name": "sasuke",
+            "password": "pass123",
+            "name": "Sasuke ",
+            "last_name": "Uchiha",
+            "career": "Finance engineer",
+            "email": "Sasuke.Uchiha@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "7788503",
+            "nick_name": "Sakura",
+            "password": "pass123",
+            "name": "Sakura ",
+            "last_name": "Haruno",
+            "career": "Finance engineer",
+            "email": "Sakura.Haruno@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "7788504",
+            "nick_name": "Rock",
+            "password": "pass123",
+            "name": "Rock",
+            "last_name": "Lee",
+            "career": "Finance engineer",
+            "email": "Rock.Lee@gmail.com",
+            "type": "Student"
+        },
+		{
+            "_id": "7788505",
+            "nick_name": "Kakashi",
+            "password": "pass123",
+            "name": "Kakashi",
+            "last_name": "Hatake",
+            "career": "Finance engineer",
+            "email": "Kakashi.Hatake@gmail.com",
+            "type": "Professor"
+        },
+		{
+            "_id": "7788506",
+            "nick_name": "Madara",
+            "password": "pass123",
+            "name": "Madara",
+            "last_name": "Uchiha",
+            "career": "Finance engineer",
+            "email": "Madara.Uchiha@gmail.com",
+            "type": "Student"
+        },
         {
             "_id": "5847585",
             "nick_name": "rseveric",
