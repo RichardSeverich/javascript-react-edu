@@ -7,9 +7,6 @@ import { Consumer } from './../../Context'
 class Mostrar extends Component{
     constructor(){
         super();
-        /*this.state = {
-            courses
-        }*/
         this.eliminar = this.eliminar.bind(this);
         this.navigateCoursesUsersMostrar = this.navigateCoursesUsersMostrar.bind(this);
     }
@@ -30,19 +27,6 @@ class Mostrar extends Component{
     }
 
     render() {
-        // @Deprecate
-        /*const rows = this.state.courses.map((course, i) => {
-            return (
-            <tr key={course._id}>
-                <td scope="col"><input type="checkbox"></input></td>
-                <td scope="col">{course._id}</td>
-                <td scope="col">{course.name}</td>
-                <td scope="col"> <button className="btn btn-info">Detalle</button> </td>
-                <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
-                <td scope="col"> <button className="btn btn-danger">Eliminar</button> </td>
-            </tr>
-            )
-        })*/
         return (
 <div>
     <NavigationBar></NavigationBar>
@@ -61,9 +45,6 @@ class Mostrar extends Component{
                     <th scope="col">_id</th>
                     <th scope="col">name</th>
                     <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -78,20 +59,11 @@ class Mostrar extends Component{
                                         <td scope="col"><input type="checkbox"></input></td>
                                         <td scope="col">{course._id}</td>
                                         <td scope="col">{course.name}</td>
-                                        <td scope="col"> <button className="btn btn-success">Inscribir</button> </td>
                                         <td scope="col"> 
                                             <button
                                                 onClick={this.navigateCoursesUsersMostrar.bind(this, course)}
                                                 className="btn btn-info">
                                                 Detalle
-                                            </button>
-                                        </td>
-                                        <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
-                                        <td scope="col"> 
-                                            <button
-                                                onClick={this.eliminar.bind(this, props, course._id)}
-                                                className="btn btn-danger">
-                                                Eliminar
                                             </button>
                                         </td>
                                     </tr>
