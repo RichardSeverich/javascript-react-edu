@@ -1,5 +1,5 @@
 {
-    "courses_users": [
+    "coursesUsers": [
         {
             "_id": "1001",
             "course_id": "5de09bfdc3c68622c07f7100",
@@ -69,6 +69,6 @@
             "_id": "1014",
             "course_id": "5de09bfdc3c68622c07f7101",
 			"user_id": "5925104"
-        },
+        }
     ]
 }

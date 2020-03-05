@@ -11,6 +11,14 @@ class Mostrar extends Component{
             courses
         }*/
         this.eliminar = this.eliminar.bind(this);
+        this.navigateCoursesUsersMostrar = this.navigateCoursesUsersMostrar.bind(this);
+    }
+
+    navigateCoursesUsersMostrar(course) {
+        this.props.history.push({
+            pathname : '/inscriptions-mostrar',
+            course:course
+        });
     }
 
     eliminar(props, _id) {
@@ -60,7 +68,7 @@ class Mostrar extends Component{
                 </thead>
                 <tbody>
                 {/*rows*/}
-                <Consumer>  
+                <Consumer>
                     {
                         props => {
                             return props.courses.map((course, i) => {
@@ -71,7 +79,13 @@ class Mostrar extends Component{
                                         <td scope="col">{course._id}</td>
                                         <td scope="col">{course.name}</td>
                                         <td scope="col"> <button className="btn btn-success">Inscribir</button> </td>
-                                        <td scope="col"> <button className="btn btn-info">Detalle</button> </td>
+                                        <td scope="col"> 
+                                            <button
+                                                onClick={this.navigateCoursesUsersMostrar.bind(this, course)}
+                                                className="btn btn-info">
+                                                Detalle
+                                            </button>
+                                        </td>
                                         <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
                                         <td scope="col"> 
                                             <button

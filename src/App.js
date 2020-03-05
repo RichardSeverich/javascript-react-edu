@@ -7,6 +7,7 @@ import Content from './components/content/Content';
 // Data
 import { users } from './mock-data/users.json';
 import { courses } from './mock-data/courses.json';
+import { coursesUsers } from './mock-data/courses-users.json';
 
 // Context
 import { Provider } from './Context'
@@ -17,8 +18,10 @@ class App extends Component {
         this.state = {
             users: users,
             courses: courses,
+            coursesUsers: coursesUsers,
             updateUsers: (updatedUsers) => {this.setState({users: updatedUsers})},
-            updateCourses: (updateCourses) => {this.setState({courses: updateCourses})}
+            updateCourses: (updateCourses) => {this.setState({courses: updateCourses})},
+            updateCourseUsers: (updateCourseUsers) => {this.setState({coursesUsers: updateCourseUsers})}
         };
     };
     static propTypes = {
