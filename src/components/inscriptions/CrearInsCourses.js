@@ -4,26 +4,17 @@ import NavigationBar from './../nav-bar/NavigationBar';
 import './Mostrar.css';
 import { Consumer } from './../../Context'
 
-class Crear extends Component{
+class CrearInsCourses extends Component{
     constructor(){
         super();
-        this.eliminar = this.eliminar.bind(this);
-        this.navigateCoursesUsersMostrar = this.navigateCoursesUsersMostrar.bind(this);
+        this.navigateInscribirUsers = this.navigateInscribirUsers.bind(this);
     }
 
-    navigateCoursesUsersMostrar(course) {
+    navigateInscribirUsers(props, course) {
         this.props.history.push({
-            pathname : '/inscriptions-mostrar',
+            pathname : '/inscriptions-crear-users',
             course:course
         });
-    }
-
-    eliminar(props, _id) {
-        let courses = props.courses.filter((element, index) => {
-            return element._id !== _id;
-        })
-        props.updateCourses(courses)
-        alert("deleted successfully");
     }
 
     render() {
@@ -34,7 +25,7 @@ class Crear extends Component{
         <div className="card card-courses">
             <div className="card-header">
                 <h3 align="center">
-                    Cursos
+                    Seleccione un Cursos
                 </h3>
             </div>
             <div className="card-body">
@@ -44,7 +35,6 @@ class Crear extends Component{
                     <th scope="col"></th>
                     <th scope="col">_id</th>
                     <th scope="col">name</th>
-                    <th scope="col"></th>
                     <th scope="col"></th>
                 </tr>
                 </thead>
@@ -60,7 +50,13 @@ class Crear extends Component{
                                         <td scope="col"><input type="checkbox"></input></td>
                                         <td scope="col">{course._id}</td>
                                         <td scope="col">{course.name}</td>
-                                        <td scope="col"> <button className="btn btn-success">Inscribir</button> </td>
+                                        <td scope="col"> 
+                                            <button
+                                                onClick={this.navigateInscribirUsers.bind(this, props, course)}
+                                                className="btn btn-success">
+                                                inscribir
+                                            </button>
+                                        </td>
                                     </tr>
                                 )
                             })
@@ -76,4 +72,4 @@ class Crear extends Component{
         )
     }
 }
-export default Crear;
+export default CrearInsCourses;

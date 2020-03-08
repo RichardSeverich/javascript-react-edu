@@ -57,7 +57,7 @@ class NavigationBar extends Component {
   }
 
   navigateInscripcionesCrear() {
-    this.props.history.push('/inscriptions-crear');
+    this.props.history.push('/inscriptions-crear-courses');
   }
 
   navigateLogin(){

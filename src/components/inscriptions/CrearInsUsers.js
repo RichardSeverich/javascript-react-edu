@@ -4,27 +4,28 @@ import NavigationBar from './../nav-bar/NavigationBar';
 import './Mostrar.css';
 import { Consumer } from './../../Context'
 
-class Mostrar extends Component{
-    constructor(){
-        super();
+class CrearInsUsers extends Component{
+    constructor(props){
+        super(props);
         this.state = {
-            users
+            arrayUsers: []
         }
-       this.eliminar = this.eliminar.bind(this);
+        this.inscribir = this.inscribir.bind(this);
     }
-    eliminar(props, _id) {
-        let coursesUsers = props.coursesUsers.filter((element, index) => {
-            return element.user_id == _id;
+
+    inscribir(props, user_id, course_id) {
+        let last = props.coursesUsers[props.coursesUsers.length - 1]
+        let id = (parseInt(last._id) + 1).toString();
+        let newInscription = {
+            _id: id,
+            course_id: course_id,
+            user_id: user_id,
+        };
+        props.coursesUsers.push(newInscription);
+        this.setState(() => {
+            return { arrayUsers: []};
         });
-        if(coursesUsers.length == 0){
-            let users = props.users.filter((element, index) => {
-                return element._id !== _id;
-            });
-            props.updateUsers(users)
-            alert("deleted successfully");
-        } else {
-            alert("user has relations");
-        }
+        alert("inscription successfully");
     }
 
     render() {
@@ -34,8 +35,11 @@ class Mostrar extends Component{
             <div className="card card-users">
                 <div className="card-header">
                     <h3 align="center">
-                        Usuarios
+                        {this.props.location.course.name}
                     </h3>
+                    <h4 align="center">
+                        Usuarios
+                    </h4>
                 </div>
                 <div className="card-body">
                     <table className="table table-hover table-bordered">
@@ -51,15 +55,32 @@ class Mostrar extends Component{
                                 <th scope="col">email</th>
                                 <th scope="col">type</th>
                                 <th scope="col"></th>
-                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody> 
                             <Consumer>  
                             {
                             props => {
-                                return props.users.map((user, i) => {
-                                    let _id = user._id;
+                                let course_id = this.props.location.course._id;
+                                for (var i = 0; i < props.users.length; i+=1) {
+                                    let bandera = true;
+                                    let user = props.users[i];
+                                    for (var j = 0; j < props.coursesUsers.length; j+=1) {
+                                        let inscription = props.coursesUsers[j];
+                                        let courseExist =  course_id === inscription.course_id;
+                                        let userExist = user._id == inscription.user_id;
+                                        if(courseExist && userExist){
+                                                bandera = false;
+                                                break;
+                                        } 
+                                    }
+                                    if(bandera){
+                                        this.state.arrayUsers.push(user);
+                                    }
+                                }
+                                return this.state.arrayUsers.map((user, i) => {
+                                    let user_id = user._id;
+                                    let course_id = this.props.location.course._id;
                                     return (
                                         <tr key={user._id}>
                                             <td scope="col"><input type="checkbox"></input></td>
@@ -71,12 +92,11 @@ class Mostrar extends Component{
                                             <td scope="col">{user.career}</td>
                                             <td scope="col">{user.email}</td>
                                             <td scope="col">{user.type}</td>
-                                            <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
                                             <td scope="col"> 
                                                 <button
-                                                    onClick={this.eliminar.bind(this, props, user._id)}
-                                                    className="btn btn-danger">
-                                                    Eliminar
+                                                    onClick={this.inscribir.bind(this, props, user_id, course_id)}
+                                                    className="btn btn-success">
+                                                    inscribir
                                                 </button>
                                             </td>
                                         </tr>
@@ -93,4 +113,4 @@ class Mostrar extends Component{
         </div> )
     }
 }
-export default Mostrar;
+export default CrearInsUsers;

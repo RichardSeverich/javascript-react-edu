@@ -16,14 +16,16 @@ import ScoresMostrar from './components/scores/Mostrar';
 import ScoresCrear from './components/scores/Crear';
 import CoursesUsersMostrarDetails from './components/courses-users/Mostrar';
 import InscriptionsMostrar from './components/inscriptions/Mostrar';
-import InscriptionsCrear from './components/inscriptions/Crear';
+import InscriptionsCrearCourses from './components/inscriptions/CrearInsCourses';
+import InscriptionsCrearUsers from './components/inscriptions/CrearInsUsers'
 
 const AppRoutes = () =>
   <App>
     <Switch>
       <Route exact path="/inscriptions-mostrar-detalle" component={CoursesUsersMostrarDetails}/>
       <Route exact path="/inscriptions-mostrar" component={InscriptionsMostrar}/>
-      <Route exact path="/inscriptions-crear" component={InscriptionsCrear}/>
+      <Route exact path="/inscriptions-crear-courses" component={InscriptionsCrearCourses}/>
+      <Route exact path="/inscriptions-crear-users" component={InscriptionsCrearUsers}/>
       <Route exact path="/scores-crear" component={ScoresCrear}/>
       <Route exact path="/scores-mostrar" component={ScoresMostrar}/>
       <Route exact path="/modules-crear" component={ModulesCrear}/>
