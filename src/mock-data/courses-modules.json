@@ -1,0 +1,155 @@
+{
+    "coursesModules": [
+        {
+            "_id": "1001",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f771"
+        },
+        {
+            "_id": "1002",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f772"
+        },
+        {
+            "_id": "1003",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f773"
+        },
+        {
+            "_id": "1004",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f774"
+        },
+        {
+            "_id": "1005",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f775"
+        },
+        {
+            "_id": "1006",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f776"
+        },
+        {
+            "_id": "1007",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f777"
+        },
+        {
+            "_id": "1008",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f778"
+        },
+        {
+            "_id": "1009",
+            "course_id": "5de09bfdc3c68622c07f7100",
+			"module_id": "5de09bfdc3c68622c07f779"
+        },
+		{
+            "_id": "1010",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f771"
+        },
+		        {
+            "_id": "1011",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f772"
+        },
+				{
+            "_id": "1012",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f773"
+        },
+		{
+            "_id": "1013",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f774"
+        },
+		
+		{
+            "_id": "1014",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f775"
+        },
+		{
+            "_id": "1015",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f776"
+        },
+		{
+            "_id": "1016",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f777"
+        },
+		{
+            "_id": "1017",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f778"
+        },
+		{
+            "_id": "1018",
+            "course_id": "5de09bfdc3c68622c07f7101",
+			"module_id": "5de09bfdc3c68622c07f779"
+        },
+		{
+            "_id": "1019",
+            "course_id": "5de09bfdc3c68622c07f7106",
+			"module_id": "5de09bfdc3c68622c07f771"
+        },
+		{
+            "_id": "1020",
+            "course_id": "5de09bfdc3c68622c07f7106",
+			"module_id": "5de09bfdmdc68852c07f114"
+        },
+		{
+            "_id": "1021",
+            "course_id": "5de09bfdc3c68622c07f7106",
+			"module_id": "5de09bfdmdc68852c07f100"
+        },
+		{
+            "_id": "1022",
+            "course_id": "5de09bfdc3c68622c07f7106",
+			"module_id": "5de09bfdmdc68852c07f104"
+        },
+		{
+            "_id": "1023",
+            "course_id": "5de09bfdc3c68622c07f7106",
+			"module_id": "5de09bfdmdc68852c07f107"
+        },
+		{
+            "_id": "1024",
+            "course_id": "5de09bfdc3c68622c07f7106",
+			"module_id": "5de09bfdmdc68852c07f110"
+        },
+		{
+            "_id": "1025",
+            "course_id": "5de09bfdc3c68622c07f7109",
+			"module_id": "5de09bfdmdc68852c07f100"
+        },
+		{
+            "_id": "1026",
+            "course_id": "5de09bfdc3c68622c07f7109",
+			"module_id": ""
+        },
+		{
+            "_id": "1027",
+            "course_id": "5de09bfdc3c68622c07f7109",
+			"module_id": "5de09bfdmdc68852c07f104"
+        },
+		{
+            "_id": "1028",
+            "course_id": "5de09bfdc3c68622c07f7109",
+			"module_id": "5de09bfdmdc68852c07f107"
+        },
+		{
+            "_id": "1029",
+            "course_id": "5de09bfdc3c68622c07f7109",
+			"module_id": "5de09bfdmdc68852c07f110"
+        },
+		{
+            "_id": "1030",
+            "course_id": "5de09bfdc3c68622c07f7109",
+			"module_id": "5de09bfdmdc68852c07f114"
+        }
+    ]
+}

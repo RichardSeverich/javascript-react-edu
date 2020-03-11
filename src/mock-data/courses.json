@@ -26,15 +26,27 @@
         },
 		{
             "_id": "5de09bfdc3c68622c07f7106",
-            "name": "TechGroup QA A"
+            "name": "Sexto A"
         },
 		{
             "_id": "5de09bfdc3c68622c07f7107",
-            "name": "TechGroup QA B"
+            "name": "Sexto B"
         },
 		{
             "_id": "5de09bfdc3c68622c07f7108",
-            "name": "TechGroup QA C"
+            "name": "Sexto C"
+        },
+		{
+            "_id": "5de09bfdc3c68622c07f7109",
+            "name": "Ingenieria de sistemas 1er Semestre"
+        },
+		{
+            "_id": "5de09bfdc3c68622c07f7109",
+            "name": "Ingenieria de sistemas 2do Semestre"
+        },
+		{
+            "_id": "5de09bfdc3c68622c07f7109",
+            "name": "Ingenieria de sistemas 3er Semestre"
         }
     ]
 }

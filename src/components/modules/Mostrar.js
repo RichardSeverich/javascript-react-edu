@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { modules } from './../../mock-data/modules.json';
 import NavigationBar from './../nav-bar/NavigationBar';
 import './Mostrar.css';
+import { Consumer } from './../../Context'
 
 class Mostrar extends Component{
     constructor(){
@@ -9,20 +10,25 @@ class Mostrar extends Component{
         this.state = {
             modules
         }
+        this.eliminar = this.eliminar.bind(this);
     }
+
+    eliminar(props, _id) {
+        let coursesModules = props.coursesModules.filter((element, index) => {
+            return element.module_id == _id;
+        });
+        if(coursesModules.length == 0){
+            let modules = props.modules.filter((element, index) => {
+                return element._id !== _id;
+            });
+            props.updateModules(modules);
+            alert("deleted successfully");
+        } else {
+            alert("module has relations");
+        }
+    }
+
     render() {
-        const rows = this.state.modules.map((module, i) => {
-            return (
-            <tr key={module._id}>
-                <td scope="col"><input type="checkbox"></input></td>
-                <td scope="col">{module._id}</td>
-                <td scope="col">{module.name}</td>
-                <td scope="col"> <button className="btn btn-info">Detalle</button> </td>
-                <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
-                <td scope="col"> <button className="btn btn-danger">Eliminar</button> </td>
-            </tr>
-            )
-        })
         return (
 <div>
     <NavigationBar></NavigationBar>
@@ -46,7 +52,44 @@ class Mostrar extends Component{
                 </tr>
                 </thead>
                 <tbody>
-                    {rows}
+                <Consumer>
+                    {
+                        props => {
+                            return props.modules.map((module, i) => {
+                                let _id = module._id;
+                                return (
+                                    <tr key={module._id}>
+                                        <td scope="col"><input type="checkbox"></input></td>
+                                        <td scope="col">{module._id}</td>
+                                        <td scope="col">{module.name}</td>
+                                        <td scope="col"> 
+                                            <button 
+                                                className="btn btn-success"
+                                                
+                                                >Inscribir
+                                            </button> 
+                                        </td>
+                                        <td scope="col"> 
+                                            <button
+                                                
+                                                className="btn btn-info">
+                                                Detalle
+                                            </button>
+                                        </td>
+                                        <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
+                                        <td scope="col"> 
+                                            <button
+                                                onClick={this.eliminar.bind(this, props, module._id)}
+                                                className="btn btn-danger">
+                                                Eliminar
+                                            </button>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    }
+                </Consumer>
                 </tbody>
                 </table>
             </div>

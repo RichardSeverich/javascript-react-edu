@@ -103,6 +103,16 @@ class NavigationBar extends Component {
 
     <div className="btn-group">
         <button type="button" className="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Adm. Planes
+        </button>
+        <div className="dropdown-menu dropdown-menu-right">
+          <button className="dropdown-item" type="button">Mostrar</button>
+          <button className="dropdown-item" type="button">Crear</button>
+        </div>
+    </div>
+
+    <div className="btn-group">
+        <button type="button" className="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Adm. Modulos
         </button>
         <div className="dropdown-menu dropdown-menu-right">
@@ -118,6 +128,20 @@ class NavigationBar extends Component {
         <div className="dropdown-menu dropdown-menu-right">
           <button onClick={this.navigateNotasMostrar} className="dropdown-item" type="button">Mostrar</button>
           <button onClick={this.navigateNotasCrear} className="dropdown-item" type="button">Crear</button>
+        </div>
+    </div>
+
+    <div className="btn-group">
+        <button type="button" className="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Adm. Repores
+        </button>
+        <div className="dropdown-menu dropdown-menu-right">
+          <button className="dropdown-item" type="button">Reporte Usuarios</button>
+          <button className="dropdown-item" type="button">Reporte Cursos </button>
+          <button className="dropdown-item" type="button">Reporte Inscripciones </button>
+          <button className="dropdown-item" type="button">Reporte Modulos </button>
+          <button className="dropdown-item" type="button">Reporte Cursos Modulos </button>
+          <button className="dropdown-item" type="button">Reporte Notas </button>
         </div>
     </div>
   </ul>
