@@ -30,7 +30,10 @@ class Mostrar extends Component{
         let coursesUsers = props.coursesUsers.filter((element, index) => {
             return element.course_id == _id;
         });
-        if(coursesUsers.length == 0){
+        let coursesModules = props.coursesModules.filter((element, index) => {
+            return element.course_id == _id;
+        });
+        if(coursesUsers.length == 0 && coursesModules.length == 0){
             let courses = props.courses.filter((element, index) => {
                 return element._id !== _id;
             });

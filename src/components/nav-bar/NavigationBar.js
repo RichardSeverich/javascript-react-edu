@@ -18,6 +18,8 @@ class NavigationBar extends Component {
     this.navigateNotasMostrar = this.navigateNotasMostrar.bind(this);
     this.navigateInscripcionesMostrar = this.navigateInscripcionesMostrar.bind(this);
     this.navigateInscripcionesCrear = this.navigateInscripcionesCrear.bind(this);
+    this.navigateCursosModulosMostrar = this.navigateCursosModulosMostrar.bind(this);
+    this.navigateCursosModulosCrear = this.navigateCursosModulosCrear.bind(this);
   }
   
   navigateUsuariosMostrar() {
@@ -58,6 +60,14 @@ class NavigationBar extends Component {
 
   navigateInscripcionesCrear() {
     this.props.history.push('/inscriptions-crear-courses');
+  }
+
+  navigateCursosModulosMostrar() {
+    this.props.history.push('/courses-modules-mostrar');
+  }
+
+  navigateCursosModulosCrear() {
+    this.props.history.push('/courses-modules-crear-courses');
   }
 
   navigateLogin(){
@@ -106,8 +116,8 @@ class NavigationBar extends Component {
           Adm. Planes
         </button>
         <div className="dropdown-menu dropdown-menu-right">
-          <button className="dropdown-item" type="button">Mostrar</button>
-          <button className="dropdown-item" type="button">Crear</button>
+          <button onClick={this.navigateCursosModulosMostrar} className="dropdown-item" type="button">Mostrar</button>
+          <button onClick={this.navigateCursosModulosCrear} className="dropdown-item" type="button">Crear</button>
         </div>
     </div>
 

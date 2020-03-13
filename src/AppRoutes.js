@@ -18,10 +18,18 @@ import CoursesUsersMostrarDetails from './components/courses-users/Mostrar';
 import InscriptionsMostrar from './components/inscriptions/Mostrar';
 import InscriptionsCrearCourses from './components/inscriptions/CrearInsCourses';
 import InscriptionsCrearUsers from './components/inscriptions/CrearInsUsers'
+import CoursesModulesMostrar from './components/courses-modules/MostrarCourses'
+import CoursesModulesMostrarDetails from './components/courses-modules/MostrarModules'
+import CoursesModulesCrearCourses from './components/courses-modules/CrearCourses'
+import CoursesModulesCrearModules from './components/courses-modules/CrearModules'
 
 const AppRoutes = () =>
   <App>
     <Switch>
+      <Route exact path="/courses-modules-crear-modules" component={CoursesModulesCrearModules}/>
+      <Route exact path="/courses-modules-crear-courses" component={CoursesModulesCrearCourses}/>
+      <Route exact path="/courses-modules-mostrar-detalle" component={CoursesModulesMostrarDetails}/>
+      <Route exact path="/courses-modules-mostrar" component={CoursesModulesMostrar}/>
       <Route exact path="/inscriptions-mostrar-detalle" component={CoursesUsersMostrarDetails}/>
       <Route exact path="/inscriptions-mostrar" component={InscriptionsMostrar}/>
       <Route exact path="/inscriptions-crear-courses" component={InscriptionsCrearCourses}/>

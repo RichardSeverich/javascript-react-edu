@@ -25,7 +25,7 @@ class CrearInsCourses extends Component{
         <div className="card card-courses">
             <div className="card-header">
                 <h3 align="center">
-                    Seleccione un Cursos
+                    Seleccione un Curso
                 </h3>
             </div>
             <div className="card-body">

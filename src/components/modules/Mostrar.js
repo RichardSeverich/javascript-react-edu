@@ -11,6 +11,7 @@ class Mostrar extends Component{
             modules
         }
         this.eliminar = this.eliminar.bind(this);
+
     }
 
     eliminar(props, _id) {
@@ -48,7 +49,6 @@ class Mostrar extends Component{
                     <th scope="col">name</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
-                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -62,20 +62,6 @@ class Mostrar extends Component{
                                         <td scope="col"><input type="checkbox"></input></td>
                                         <td scope="col">{module._id}</td>
                                         <td scope="col">{module.name}</td>
-                                        <td scope="col"> 
-                                            <button 
-                                                className="btn btn-success"
-                                                
-                                                >Inscribir
-                                            </button> 
-                                        </td>
-                                        <td scope="col"> 
-                                            <button
-                                                
-                                                className="btn btn-info">
-                                                Detalle
-                                            </button>
-                                        </td>
                                         <td scope="col"> <button className="btn btn-warning">Editar</button> </td>
                                         <td scope="col"> 
                                             <button

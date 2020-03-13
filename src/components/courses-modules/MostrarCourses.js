@@ -4,15 +4,15 @@ import NavigationBar from './../nav-bar/NavigationBar';
 import './Mostrar.css';
 import { Consumer } from './../../Context'
 
-class Mostrar extends Component{
+class MostrarCourses extends Component{
     constructor(){
         super();
-        this.navigateCoursesUsersMostrar = this.navigateCoursesUsersMostrar.bind(this);
+        this.navigateCoursesModulesMostrar = this.navigateCoursesModulesMostrar.bind(this);
     }
 
-    navigateCoursesUsersMostrar(course) {
+    navigateCoursesModulesMostrar(course) {
         this.props.history.push({
-            pathname : '/inscriptions-mostrar-detalle',
+            pathname : '/courses-modules-mostrar-detalle',
             course:course
         });
     }
@@ -52,7 +52,7 @@ class Mostrar extends Component{
                                         <td scope="col">{course.name}</td>
                                         <td scope="col"> 
                                             <button
-                                                onClick={this.navigateCoursesUsersMostrar.bind(this, course)}
+                                                onClick={this.navigateCoursesModulesMostrar.bind(this, course)}
                                                 className="btn btn-info">
                                                 Detalle
                                             </button>
@@ -72,4 +72,4 @@ class Mostrar extends Component{
         )
     }
 }
-export default Mostrar;
+export default MostrarCourses;
