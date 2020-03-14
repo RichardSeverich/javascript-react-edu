@@ -10,6 +10,7 @@ import { courses } from './mock-data/courses.json';
 import { modules } from './mock-data/modules.json';
 import { coursesUsers } from './mock-data/courses-users.json';
 import { coursesModules } from './mock-data/courses-modules.json';
+import { scores } from './mock-data/scores.json';
 
 
 // Context
@@ -24,11 +25,13 @@ class App extends Component {
             modules: modules,
             coursesUsers: coursesUsers,
             coursesModules: coursesModules,
+            scores: scores,
             updateUsers: (updatedUsers) => {this.setState({users: updatedUsers})},
             updateCourses: (updateCourses) => {this.setState({courses: updateCourses})},
             updateModules: (updateModules) => {this.setState({modules: updateModules})},
             updateCourseUsers: (updateCourseUsers) => {this.setState({coursesUsers: updateCourseUsers})},
-            updateCourseModules: (updateCourseModules) => {this.setState({coursesModules: updateCourseModules})}
+            updateCourseModules: (updateCourseModules) => {this.setState({coursesModules: updateCourseModules})},
+            updateScores: (updateScores) => {this.setState({scores: updateScores})}
         };
     };
     static propTypes = {

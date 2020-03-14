@@ -47,7 +47,7 @@ class NavigationBar extends Component {
   }
 
   navigateNotasMostrar() {
-    this.props.history.push('/scores-mostrar');
+    this.props.history.push('/scores-mostrar-courses');
   }
 
   navigateModulosCrear() {
