@@ -21,8 +21,6 @@ import CoursesModulesMostrar from './components/courses-modules/MostrarCourses'
 import CoursesModulesMostrarDetails from './components/courses-modules/MostrarModules'
 import CoursesModulesCrearCourses from './components/courses-modules/CrearCourses'
 import CoursesModulesCrearModules from './components/courses-modules/CrearModules'
-
-
 import ScoresCourses from './components/scores/MostrarCourses'
 import ScoresModules from './components/scores/MostrarModules'
 import ScoresUsers from './components/scores/MostrarUsers'

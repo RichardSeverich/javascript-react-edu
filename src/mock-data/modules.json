@@ -1,128 +1,128 @@
 {
-    "modules": [
-        {
-            "_id": "5de09bfdc3c68622c07f771",
-            "name": "Software Development Fundamentals 1"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f772",
-            "name": "Software Development Fundamentals 2"
-        },
-	    {
-            "_id": "5de09bfdc3c68622c07f773",
-            "name": "Software Development Fundamentals 3"
-        },
-        {
-            "_id": "5de09bfdc3c68622c07f774",
-            "name": "Data Structure 1"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f775",
-            "name": "Data Structure 2"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f776",
-            "name": "Data Structure 3"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f777",
-            "name": "Software design"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f778",
-            "name": "Development UI"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f779",
-            "name": "Development Back-end"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f710",
-            "name": "Dev UI React"
-        },
-		{
-            "_id": "5de09bfdc3c68622c07f711",
-            "name": "Dev UI Angular"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f100",
-            "name": "Algebra 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f102",
-            "name": "Algebra 2"
-        },
-	    {
-            "_id": "5de09bfdmdc68852c07f103",
-            "name": "Algebra 3"
-        },
-        {
-            "_id": "5de09bfdmdc68852c07f104",
-            "name": "Calculo 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f105",
-            "name": "Calculo 2"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f106",
-            "name": "Calculo 3"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f107",
-            "name": "Fisica 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f108",
-            "name": "Fisica 2"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f109",
-            "name": "Fisica 3"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f110",
-            "name": "Programacion 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f112",
-            "name": "Programacion 2"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f113",
-            "name": "Programacion 3"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f114",
-            "name": "Ingles Basic 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f115",
-            "name": "Ingles Basic 2"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f116",
-            "name": "Ingles Basic 3"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f117",
-            "name": "Ingles Intermedia 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f118",
-            "name": "Ingles Intermedia 2"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f119",
-            "name": "Ingles Intermedia 3"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f120",
-            "name": "Ingles Advance 1"
-        },
-		{
-            "_id": "5de09bfdmdc68852c07f121",
-            "name": "Ingles Advance 2"
-        }
-    ]
+  "modules": [
+    {
+      "_id": "5de09bfdc3c68622c07f771",
+      "name": "Software Development Fundamentals 1"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f772",
+      "name": "Software Development Fundamentals 2"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f773",
+      "name": "Software Development Fundamentals 3"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f774",
+      "name": "Data Structure 1"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f775",
+      "name": "Data Structure 2"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f776",
+      "name": "Data Structure 3"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f777",
+      "name": "Software design"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f778",
+      "name": "Development UI"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f779",
+      "name": "Development Back-end"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f710",
+      "name": "Dev UI React"
+    },
+    {
+      "_id": "5de09bfdc3c68622c07f711",
+      "name": "Dev UI Angular"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f100",
+      "name": "Algebra 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f102",
+      "name": "Algebra 2"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f103",
+      "name": "Algebra 3"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f104",
+      "name": "Calculo 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f105",
+      "name": "Calculo 2"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f106",
+      "name": "Calculo 3"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f107",
+      "name": "Fisica 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f108",
+      "name": "Fisica 2"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f109",
+      "name": "Fisica 3"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f110",
+      "name": "Programacion 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f112",
+      "name": "Programacion 2"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f113",
+      "name": "Programacion 3"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f114",
+      "name": "Ingles Basic 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f115",
+      "name": "Ingles Basic 2"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f116",
+      "name": "Ingles Basic 3"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f117",
+      "name": "Ingles Intermedia 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f118",
+      "name": "Ingles Intermedia 2"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f119",
+      "name": "Ingles Intermedia 3"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f120",
+      "name": "Ingles Advance 1"
+    },
+    {
+      "_id": "5de09bfdmdc68852c07f121",
+      "name": "Ingles Advance 2"
+    }
+  ]
 }
