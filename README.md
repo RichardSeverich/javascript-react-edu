@@ -16,3 +16,62 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. deploy: npm start
 4. deploy will start with mock data.
 5. default credentials: User: admin, Password: admin123
+
+## Documentation
+
+### Diagram-architecture
+
+![Screenshot](documentation/javascript-react-edu-architecture.jpg)
+
+### Diagram-entity-relation
+
+![Screenshot](documentation/javascript-react-edu-entity-relation.jpg)
+
+## Usage (Execute)
+
+Here there are some UI screens.
+(note: In this page is shown only some screens.)
+
+### Login
+
+![Screenshot](documentation/ui-login.jpg)
+
+### Nav bar
+
+![Screenshot](documentation/ui-nav-bar.jpg)
+
+### Users table
+
+![Screenshot](documentation/ui-users-table.jpg)
+
+### Users Form
+
+![Screenshot](documentation/ui-users-form.jpg)
+
+### Courses table
+
+![Screenshot](documentation/ui-courses-table.jpg)
+
+### Courses Form
+
+![Screenshot](documentation/ui-courses-form.jpg)
+
+### Module table
+
+![Screenshot](documentation/ui-modules-table.jpg)
+
+### Module Form
+
+![Screenshot](documentation/ui-modules-form.jpg)
+
+### Inscriptions table
+
+![Screenshot](documentation/ui-inscriptions-table.jpg)
+
+### Plans Table
+
+![Screenshot](documentation/ui-plans-table.jpg)
+
+### Scores table
+
+![Screenshot](documentation/ui-scores-table.jpg)
