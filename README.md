@@ -1,6 +1,7 @@
 # Javascript-react-edu
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+1. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+2. This project is using react 16.12.0.
 
 ## Prerequisites
 
@@ -25,7 +26,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Diagram-entity-relation
 
-![Screenshot](documentation/javascript-react-edu-entity-relation.jpg)
+<p align="center">
+  <img src="documentation/javascript-react-edu-entity-relation.jpg">
+</p>
 
 ## Usage (Execute)
 
@@ -34,11 +37,15 @@ Here there are some UI screens.
 
 ### Login
 
-![Screenshot](documentation/ui-login.jpg)
+<p align="center">
+  <img src="documentation/ui-login.jpg">
+</p>
 
 ### Nav bar
 
-![Screenshot](documentation/ui-nav-bar.jpg)
+<p align="center">
+  <img src="documentation/ui-nav-bar.jpg">
+</p>
 
 ### Users table
 
@@ -46,7 +53,9 @@ Here there are some UI screens.
 
 ### Users Form
 
-![Screenshot](documentation/ui-users-form.jpg)
+<p align="center">
+  <img src="documentation/ui-users-form.jpg">
+</p>
 
 ### Courses table
 
@@ -54,7 +63,9 @@ Here there are some UI screens.
 
 ### Courses Form
 
-![Screenshot](documentation/ui-courses-form.jpg)
+<p align="center">
+  <img src="documentation/ui-courses-form.jpg">
+</p>
 
 ### Module table
 
@@ -62,7 +73,9 @@ Here there are some UI screens.
 
 ### Module Form
 
-![Screenshot](documentation/ui-modules-form.jpg)
+<p align="center">
+  <img src="documentation/ui-modules-form.jpg">
+</p>
 
 ### Inscriptions table
 
