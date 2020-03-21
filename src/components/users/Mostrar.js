@@ -14,9 +14,9 @@ class Mostrar extends Component {
   }
   eliminar(props, _id) {
     let coursesUsers = props.coursesUsers.filter((element, index) => {
-      return element.user_id == _id;
+      return element.user_id === _id;
     });
-    if (coursesUsers.length == 0) {
+    if (coursesUsers.length === 0) {
       let users = props.users.filter((element, index) => {
         return element._id !== _id;
       });

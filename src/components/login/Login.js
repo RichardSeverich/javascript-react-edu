@@ -17,8 +17,8 @@ class Login extends Component {
     let password = ReactDOM.findDOMNode(this.refs.password).value.trim();
     let band = false;
     users.forEach(function(user, indice, array) {
-      let bandOne = user._id == nickname && user.password == password;
-      let bandTwo = user.nick_name == nickname && user.password == password;
+      let bandOne = user._id === nickname && user.password === password;
+      let bandTwo = user.nick_name === nickname && user.password === password;
       if (bandOne || bandTwo) {
         band = true;
         //break;

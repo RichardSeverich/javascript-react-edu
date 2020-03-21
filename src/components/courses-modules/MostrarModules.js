@@ -44,7 +44,7 @@ class MostrarModules extends Component {
                       let coursesModulesSpecific = props.coursesModules.filter(
                         (element, index) => {
                           return (
-                            this.props.location.course._id == element.course_id
+                            this.props.location.course._id === element.course_id
                           );
                         }
                       );
@@ -55,7 +55,7 @@ class MostrarModules extends Component {
                       ) {
                         let module = props.modules.find(
                           elementModule =>
-                            elementModule._id == elementCourseModule.module_id
+                            elementModule._id === elementCourseModule.module_id
                         );
                         modulesSpecific.push(module);
                       });

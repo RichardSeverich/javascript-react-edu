@@ -29,12 +29,12 @@ class Mostrar extends Component {
 
   eliminar(props, _id) {
     let coursesUsers = props.coursesUsers.filter((element, index) => {
-      return element.course_id == _id;
+      return element.course_id === _id;
     });
     let coursesModules = props.coursesModules.filter((element, index) => {
-      return element.course_id == _id;
+      return element.course_id === _id;
     });
-    if (coursesUsers.length == 0 && coursesModules.length == 0) {
+    if (coursesUsers.length === 0 && coursesModules.length === 0) {
       let courses = props.courses.filter((element, index) => {
         return element._id !== _id;
       });

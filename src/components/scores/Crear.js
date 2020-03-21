@@ -12,7 +12,7 @@ class Crear extends Component {
 
   addNota(props, data) {
     let last = props.scores[props.scores.length - 1];
-    let id = (parseInt(last._id) + 1).toString();
+    let id = (parseInt(last._id, 10) + 1).toString();
     let value = ReactDOM.findDOMNode(this.refs.score).value.trim();
     let newScore = {
       _id: id,
@@ -22,8 +22,8 @@ class Crear extends Component {
     };
     let scoreExist = false;
     props.scores.forEach(function(score, index) {
-      let band1 = score.module_id == data.module._id;
-      let band2 = score.user_id == data.user._id;
+      let band1 = score.module_id === data.module._id;
+      let band2 = score.user_id === data.user._id;
       if (band1 && band2) {
         scoreExist = true;
         score.value = value;

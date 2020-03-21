@@ -50,7 +50,7 @@ class Mostrar extends Component {
                       let coursesUsersSpecific = props.coursesUsers.filter(
                         (element, index) => {
                           return (
-                            this.props.location.course._id == element.course_id
+                            this.props.location.course._id === element.course_id
                           );
                         }
                       );
@@ -61,7 +61,7 @@ class Mostrar extends Component {
                       ) {
                         let user = props.users.find(
                           elementUser =>
-                            elementUser._id == elementCourseUser.user_id
+                            elementUser._id === elementCourseUser.user_id
                         );
                         usersSpecific.push(user);
                       });

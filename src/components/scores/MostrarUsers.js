@@ -53,13 +53,13 @@ class MostrarUsers extends Component {
                       // search specific scores (Module User relation )
                       let scoreSpecific = props.scores.filter(
                         (element, index) => {
-                          return module._id == element.module_id;
+                          return module._id === element.module_id;
                         }
                       );
                       // search specific courseUsers relation
                       let coursesUsersSpecific = props.coursesUsers.filter(
                         (element, index) => {
-                          return course._id == element.course_id;
+                          return course._id === element.course_id;
                         }
                       );
                       // search specific users inscritos and verify if they have already score.
@@ -70,13 +70,13 @@ class MostrarUsers extends Component {
                       ) {
                         let userInscrito = props.users.find(
                           elementUser =>
-                            elementUser._id == elementCourseUser.user_id
+                            elementUser._id === elementCourseUser.user_id
                         );
                         userInscrito.score = "0";
                         let score = scoreSpecific.find(
-                          score => score.user_id == userInscrito._id
+                          score => score.user_id === userInscrito._id
                         );
-                        if (score != undefined) {
+                        if (score !== undefined) {
                           userInscrito.score = score.value;
                         }
                         usersSpecific.push(userInscrito);

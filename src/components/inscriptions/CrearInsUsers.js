@@ -14,7 +14,7 @@ class CrearInsUsers extends Component {
 
   inscribir(props, user_id, course_id) {
     let last = props.coursesUsers[props.coursesUsers.length - 1];
-    let id = (parseInt(last._id) + 1).toString();
+    let id = (parseInt(last._id, 10) + 1).toString();
     let newInscription = {
       _id: id,
       course_id: course_id,
@@ -63,7 +63,7 @@ class CrearInsUsers extends Component {
                         for (var j = 0; j < props.coursesUsers.length; j += 1) {
                           let inscription = props.coursesUsers[j];
                           let courseExist = course_id === inscription.course_id;
-                          let userExist = user._id == inscription.user_id;
+                          let userExist = user._id === inscription.user_id;
                           if (courseExist && userExist) {
                             bandera = false;
                             break;
