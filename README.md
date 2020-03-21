@@ -2,6 +2,7 @@
 
 1. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 2. This project is using react 16.12.0.
+3. This project is using context global state.
 
 ## Prerequisites
 
